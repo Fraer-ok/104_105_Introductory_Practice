@@ -10,46 +10,98 @@
 <body>
 
     <header class="page-header">
-        <h1 class="main-title">ИНДРИКОВ ДМИТРИЙ</h1>
-        <nav class="main-nav">
-            <ul class="nav-list">
-                <li><a href="#about" class="nav-link">Обо мне</a></li>
-                <li><a href="#hobby" class="nav-link">Мое хобби</a></li>
-                <li><a href="#contacts" class="nav-link">Контакты</a></li>
-            </ul>
-        </nav>
+        <div class="header-flex">
+            <h1 class="main-title">ИНДРИКОВ ДМИТРИЙ</h1>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">Обо мне</a></li>
+                    <li><a href="#hobby" class="nav-link">Мое хобби</a></li>
+                    <li><a href="#movies" class="nav-link">Любимые фильмы</a></li>
+                    <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main class="main-content">
-        <section id="about" class="content-section about-section">
-            <h2 class="section-title">ОБО МНЕ</h2>
-            <p class="section-text">Живу в городе Саранск, обучаюсь в МГУ имени Н.П.Огарёва и являюсь студентом 104-ой группы ФМиИТ.</p>
-            <p class="section-text">Люблю работать и получать за это деньги и потом отдыхать с друзьями</p>
-            <p class="section-text">В дальнейшем хочется перейти на доллары и просто красиво жить </p>
-            
-            <img src="67.jpg" alt="Это я в корзине" class="profile-photo">
-        </section>
+    <div class="grid-layout">
 
-        <section id="hobby" class="content-section hobby-section">
-            <h2 class="section-title">МОЁ ХОББИ</h2>
-            <article class="hobby-card">
-                <h3 class="card-title">Помогать в создании контента</h3>
-                <p class="section-text">Я уже помогаю другу в его медиа развитии в будущем рассматриваю становление его менеджером</p>
-            </article>
-        </section>
-    </main>
+        <main class="main-content">
 
-    <aside id="contacts" class="content-section contacts-section">
-        <h3 class="section-title">КОНТАКТЫ</h3>
-        <ol class="contacts-list">
-            <li class="contact-item">Email: dimainbrikov@mail.ru</li>
-            <li class="contact-item">Telegram: @MuchDarklite</li>
-            <li class="contact-item">Телефон: +7(902)666-66-67</li>
-        </ol>
-    </aside>
+            <section id="about" class="content-section about-section">
+                <h2 class="section-title">ОБО МНЕ</h2>
+                <div class="about-flex">
+                    <div class="about-text">
+                        <p class="section-text">Живу в городе Саранск, обучаюсь в МГУ имени Н.П.Огарёва и являюсь студентом 104-ой группы ФМиИТ.</p>
+                        <p class="section-text">Люблю работать и получать за это деньги и потом отдыхать с друзьями</p>
+                        <p class="section-text">В дальнейшем хочется перейти на доллары и просто красиво жить</p>
+                    </div>
+                    <img src="67.jpg" alt="Это я в корзине" class="profile-photo">
+                </div>
+            </section>
+
+            <section id="hobby" class="content-section hobby-section">
+                <h2 class="section-title">МОЁ ХОББИ</h2>
+                <article class="hobby-card">
+                    <h3 class="card-title">Помогать в создании контента</h3>
+                    <p class="section-text">Я уже помогаю другу в его медиа развитии в будущем рассматриваю становление его менеджером</p>
+                </article>
+            </section>
+
+            <section id="movies" class="content-section movies-section">
+                <h2 class="section-title">ЛЮБИМЫЕ ФИЛЬМЫ</h2>
+                <div class="movies-grid">
+                    <div class="movie-card">
+                        <div class="card-image"></div>
+                        <h4 class="card-title">Железный человек</h4>
+                        <p class="card-text">2008</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-image"></div>
+                        <h4 class="card-title">Властелин колец</h4>
+                        <p class="card-text">2001-2003</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-image"></div>
+                        <h4 class="card-title">Коммерсант</h4>
+                        <p class="card-text">2026</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-image"></div>
+                        <h4 class="card-title">Backrooms</h4>
+                        <p class="card-text">2026</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-image"></div>
+                        <h4 class="card-title">The Sopranos</h4>
+                        <p class="card-text">1999-2007</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-image"></div>
+                        <h4 class="card-title">Духлесс</h4>
+                        <p class="card-text">2012</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside id="contacts" class="content-section contacts-section">
+            <h3 class="section-title">КОНТАКТЫ</h3>
+            <ol class="contacts-list">
+                <li class="contact-item">dimainbrikov@mail.ru</li>
+                <li class="contact-item">@MuchDarklite</li>
+                <li class="contact-item">+7(902)666-66-67</li>
+                <li class="contact-item"><a href="https://github.com/Fraer-ok" target="_blank" class="footer-link">GitHub</a></li>
+            </ol>
+            <div class="contact-note">
+                <p>Свяжитесь со мной в любое время!</p>
+            </div>
+        </aside>
+    </div>
 
     <footer class="page-footer">
-        <p class="footer-text">&copy; 2026 Индриков Дмитрий. <a href="https://github.com/Fraer-ok" target="_blank" class="footer-link">Мой профиль на GitHub</a></p>
+        <p class="footer-text">&copy; 2026 Индриков Дмитрий. 
+            <a href="https://github.com/Fraer-ok" target="_blank" class="footer-link">Мой профиль на GitHub</a>
+        </p>
     </footer>
 
 </body>
