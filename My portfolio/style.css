@@ -199,6 +199,17 @@ body {
     background-size: 40px;
 }
 
+.card-image.card-image--photo {
+    background-color: #1f2937;
+    background-size: cover !important;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.movie-card:hover .card-image.card-image--photo {
+    background-size: cover !important;
+}
+
 .movie-card .card-title {
     margin: 0 0 6px 0;
     font-size: clamp(13px, 2.5vw, 18px);
@@ -722,5 +733,17 @@ body {
     .radio-options {
         flex-direction: column;
         gap: 8px;
+    }
+}
+@media (max-width: 899px) {
+    .page-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts-section {
+        order: 999;
+        width: 100%;
+        margin-top: 20px;
     }
 }
