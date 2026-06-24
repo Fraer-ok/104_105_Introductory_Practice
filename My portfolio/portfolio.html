@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Личная страница-визитка web-разработчика">
+    <title>Дмитрий Индриков</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="page-header">
+        <div class="header-container">
+            <h1 class="main-title">ИНДРИКОВ ДМИТРИЙ</h1>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">Обо мне</a></li>
+                    <li><a href="#hobby" class="nav-link">Хобби</a></li>
+                    <li><a href="#movies" class="nav-link">Фильмы</a></li>
+                    <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                    <li><a href="#feedback" class="nav-link">Связаться</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-wrapper">
+
+        <main class="main-content">
+
+            <section id="about" class="content-section about-section">
+                <h2 class="section-title">ОБО МНЕ</h2>
+                <div class="about-flex">
+                    <div class="about-text">
+                        <p class="section-text">Живу в городе Саранск, обучаюсь в МГУ имени Н.П.Огарёва и являюсь студентом 104-ой группы ФМиИТ.</p>
+                        <p class="section-text">Люблю работать и получать за это деньги и потом отдыхать с друзьями</p>
+                        <p class="section-text">В дальнейшем хочется перейти на доллары и просто красиво жить</p>
+                    </div>
+                    <img src="67.jpg" alt="Это я в корзине" class="profile-photo">
+                </div>
+            </section>
+
+            <section id="hobby" class="content-section hobby-section">
+                <h2 class="section-title">МОЁ ХОББИ</h2>
+                <article class="hobby-card">
+                    <h3 class="card-title">Помогать в создании контента</h3>
+                    <p class="section-text">Я уже помогаю другу в его медиа развитии. В будущем рассматриваю становление его менеджером.</p>
+                </article>
+            </section>
+
+            <section id="movies" class="content-section movies-section">
+                <h2 class="section-title">ЛЮБИМЫЕ ФИЛЬМЫ</h2>
+                <div class="movies-grid">
+                    <div class="movie-card">
+                        <div class="card-image"></div>
+                        <h4 class="card-title">Железный человек</h4>
+                        <p class="card-text">2008</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-image"></div>
+                        <h4 class="card-title">Властелин колец</h4>
+                        <p class="card-text">2001-2003</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-image"></div>
+                        <h4 class="card-title">Коммерсант</h4>
+                        <p class="card-text">2026</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-image"></div>
+                        <h4 class="card-title">Backrooms</h4>
+                        <p class="card-text">2026</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-image"></div>
+                        <h4 class="card-title">The Sopranos</h4>
+                        <p class="card-text">1999-2007</p>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-image"></div>
+                        <h4 class="card-title">Духлесс</h4>
+                        <p class="card-text">2012</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="feedback" class="content-section feedback-section">
+                <h2 class="section-title">СВЯЗАТЬСЯ СО МНОЙ</h2>
+                <p class="section-text feedback-text">Оставьте ваши контакты и я отвечу вам в ближайшее время!</p>
+                
+                <form action="#" method="POST" class="feedback-form">
+                    <div class="form-group">
+                        <label for="user_name" class="form-label">Ваше имя</label>
+                        <input type="text" id="user_name" name="username" class="form-input" placeholder="Введите ваше имя" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user_email" class="form-label">Электронная почта</label>
+                        <input type="email" id="user_email" name="email" class="form-input" placeholder="example@mail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user_message" class="form-label">Ваше сообщение</label>
+                        <textarea id="user_message" name="message" class="form-input form-textarea" placeholder="Напишите ваше сообщение..." rows="4" required></textarea>
+                    </div>
+
+                    <fieldset class="form-group form-radio-group">
+                        <legend class="form-legend">Как вы оцениваете мое портфолио?</legend>
+                        <div class="radio-options">
+                            <div class="radio-option">
+                                <input type="radio" id="rating_good" name="rating" value="good" checked>
+                                <label for="rating_good" class="form-label-radio">Отлично!</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="rating_ok" name="rating" value="ok">
+                                <label for="rating_ok" class="form-label-radio">Неплохо</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="rating_bad" name="rating" value="bad">
+                                <label for="rating_bad" class="form-label-radio">Можно лучше</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group form-checkbox-group">
+                        <input type="checkbox" id="user_agreement" name="agreement" class="form-checkbox" required>
+                        <label for="user_agreement" class="form-label-checkbox">Я согласен на обработку персональных данных</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Отправить сообщение</button>
+                </form>
+            </section>
+
+        </main>
+
+        <aside id="contacts" class="content-section contacts-section">
+            <h3 class="section-title">КОНТАКТЫ</h3>
+            <ol class="contacts-list">
+                <li class="contact-item">dimainbrikov@mail.ru</li>
+                <li class="contact-item">@MuchDarklite</li>
+                <li class="contact-item">+7(902)666-66-67</li>
+                <li class="contact-item"><a href="https://github.com/Fraer-ok" target="_blank" class="footer-link">GitHub</a></li>
+            </ol>
+            <div class="contact-note">
+                <p>Свяжитесь со мной в любое время!</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="page-footer">
+        <p class="footer-text">&copy; 2026 Индриков Дмитрий. 
+            <a href="https://github.com/Fraer-ok" target="_blank" class="footer-link">Мой профиль на GitHub</a>
+        </p>
+    </footer>
+
+</body>
+</html>
